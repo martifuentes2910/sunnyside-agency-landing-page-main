@@ -1,0 +1,101 @@
+:root {
+  /*Primary*/
+
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --Dark-desaturated-cyan: hsl(167, 40%, 24%); /*(graphic design text):*/
+  --Dark-blue: hsl(198, 62%, 26%); /*(photography text)*/
+  --Dark-moderate-cyan: hsl(168, 34%, 41%); /*(footer)*/
+
+  /*Neutral*/
+
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+body {
+  font-family: 'Barlow', sans-serif;
+  font-size: 18px;
+  color: var(--very-dark-grayish-blue);
+  margin: 0;
+}
+
+header {
+  background-image: url(images/desktop/image-header.jpg);
+  background-position: center;
+  height: 80vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  justify-content: center;
+}
+header h1 {
+  position: relative;
+  height: fit-content;
+  text-align: center;
+  font-family: 'Fraunces', serif;
+  font-weight: 900;
+  font-size: 48px;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+  color: var(--white);
+  top: 80px;
+}
+
+#flex-navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: transparent;
+}
+
+#grid-info {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+.grid-info-item {
+  height: 500px;
+}
+/* #img-1,
+#img-2 {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#img-1 {
+  background-image: url(images/desktop/image-transform.jpg);
+}
+#img-2 {
+  background-image: url(images/desktop/image-stand-out.jpg);
+} */
+#info-1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+#info-2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+#info-3 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+#info-4 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+#client-testimonials-section h3 {
+  text-align: center;
+}
+#client-testimonials-container {
+  display: flex;
+}
